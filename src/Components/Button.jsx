@@ -1,5 +1,6 @@
 import React from "react";
 import { buttonStyle } from "../Styles/styles";
+
 const Button = (props) => {
   const { text, handleOnClick, ownStyle, ...rest } = props;
   return (
