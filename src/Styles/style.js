@@ -3,8 +3,8 @@ export const appStyle = {
     backgroundImage: "linear-gradient(#ff9e00 0%,#fbc2eb 100%)",
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     padding: "20px",
-    borderRadius: "100px",
-    height: "200vh",
+    borderRadius: "10px",
+    minHeight: "100vh",
   };
   
   export const inputStyle = {
@@ -33,7 +33,7 @@ export const appStyle = {
     fontWeight: "bold",
     boxShadow: "rgba(0, 0, 0, 1.35) 0px 5px 15px",
     height: "38px",
-    width: "40px",
+    width: "100px",
     top: "-2px",
     color: "#242424",
     cursor: "pointer",
@@ -43,7 +43,7 @@ export const appStyle = {
     width: "70px",
     height: "30px",
     fontSize: "15px",
-    backgroundColor: "#ffffff20",
+    backgroundColor: "#ffffff60",
     boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
   };
   

@@ -1,32 +1,31 @@
+
 import React from "react";
 import Button from "./Button";
-import { customButtonStyle, taskStyles } from "../Styles/style";
+import { taskStyles } from "../Styles/style";
 
-const Task = (props) => {
-  const { task, index, completeTask, removeTask } = props;
+
+const Task = ({ task, index, completeTask, removeTask }) => {
   return (
-    <div
-      style={{
-        ...taskStyles,
-        textDecoration: task.completed ? "line-through" : "none",
-        opacity: task.completed ? 0.5 : 1,
-      }}
-    >
-      {task.text}
-      <div className="">
+    <div style={taskStyles}>
+      <span style={{ textDecoration: task.completed ? "line-through" : "none" ,
+        opacity: task.completed? 0.3 : 1,
+      }}>
+        {task.text}
+      </span>
+      <div>
         <Button
-          text={task.completed ? "Undo" : "Done"}
-          handleOnClick={() => completeTask(index)}
-          ownStyle={customButtonStyle}
+          text={task.completed ? "undo" : "Done"}
+          onClick={() => completeTask(index)}
         />
         <Button
-          text={"Remove"}
-          handleOnClick={() => removeTask(index)}
-          ownStyle={customButtonStyle}
+          text="Remove"
+          onClick={() => removeTask(index)}
         />
       </div>
     </div>
   );
 };
 
+
 export default Task;
+
